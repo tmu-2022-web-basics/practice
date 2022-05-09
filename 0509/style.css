@@ -1,0 +1,81 @@
+* {
+  border: 1px solid blue;
+}
+
+body {
+  background: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: orange;
+}
+
+header h1 {
+  color: white;
+  background: red;
+  width: 900px;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+}
+
+nav {
+  background: #eee;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+nav ul li {
+  background: #444;
+  flex: 1;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  background: white;
+  width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.photo {
+  width: 200px;
+  margin: 20px;
+}
+.photo:nth-of-type(9) {
+  position: fixed;
+  border-radius: 50%;
+  width: 100px;
+  right: 20px;
+  bottom: 20px;
+  animation: 5s linear infinite rotation; /* 「rotation」を5秒間で線形移動して無限回数くりかえす */
+}
+.photo:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background: #ccc;
+  margin: auto;
+  width: 900px;
+  height: 100px;
+}
+
+@keyframes rotation { /* 「rotation」の定義。0度回転から360回転まで */
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

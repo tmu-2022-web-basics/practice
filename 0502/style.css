@@ -1,0 +1,36 @@
+body {
+  background: lavender;
+}
+
+li {
+  list-style-type: "●";
+}
+
+.special {
+  list-style-type: "★";
+  color: brown;
+  font-weight: bold;
+}
+
+li strong {
+  background: white;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
