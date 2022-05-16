@@ -1,0 +1,49 @@
+body {
+  background-color: lavender;
+}
+
+header,
+nav,
+main,
+footer {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+}
+nav {
+  background-color: #222222;
+  position: sticky;
+  top: 0;
+}
+main {
+  background-color: whitesmoke;
+}
+footer {
+  color: white;
+  background-color: gray;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  flex: 1;
+  padding: 1em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main div {
+  text-align: center;
+}
+
+.photo {
+  width: 200px;
+  margin: 20px;
+}
