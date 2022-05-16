@@ -1,50 +1,51 @@
 * {
+  box-sizing: border-box;
   border: 1px solid blue;
 }
 
 body {
-  background: lightblue;
-  margin: 0;
-  padding: 0;
+  background-color: lavender;
+}
+
+header,
+nav,
+main,
+footer {
+  width: 900px;
+  margin: 0 auto;
 }
 
 header {
-  background: orange;
+  background-color: white;
 }
-
-header h1 {
-  color: white;
-  background: red;
-  width: 900px;
-  margin: auto;
-  padding-top: 1em;
-  padding-bottom: 2em;
-  padding-left: 1em;
-}
-
 nav {
-  background: #eee;
+  background-color: #222222;
   position: sticky;
   top: 0;
 }
+main {
+  background-color: whitesmoke;
+}
+footer {
+  color: white;
+  background-color: gray;
+}
+
 nav ul {
-  list-style: none;
   display: flex;
+  list-style: none;
   padding-left: 0;
-  margin: 0;
 }
 nav ul li {
-  background: #444;
   flex: 1;
+  padding: 1em;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
 }
-main {
-  background: white;
-  width: 900px;
-  margin: auto;
+
+main div {
   text-align: center;
 }
 
@@ -52,23 +53,17 @@ main {
   width: 200px;
   margin: 20px;
 }
-.photo:nth-of-type(9) {
-  position: fixed;
-  border-radius: 50%;
-  width: 100px;
-  right: 20px;
-  bottom: 20px;
-  animation: 5s linear infinite rotation; /* 「rotation」を5秒間で線形移動して無限回数くりかえす */
-}
 .photo:hover {
   transform: scale(1.1);
 }
-
-footer {
-  background: #ccc;
-  margin: auto;
-  width: 900px;
+.photo:nth-of-type(5) {
+  position: fixed;
+  width: 100px;
   height: 100px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  animation: 5s linear infinite rotation; /* 「rotation」を5秒間で線形移動して無限回数くりかえす */
 }
 
 @keyframes rotation { /* 「rotation」の定義。0度回転から360回転まで */
@@ -79,3 +74,9 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
