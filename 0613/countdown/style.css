@@ -1,0 +1,19 @@
+.settings {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.settings h3 {
+  margin: 0;
+}
+
+#clock {
+  font-family: monospace;
+}
+
+#countdown {
+  background-color: #fed;
+  padding: 4rem;
+  font-size: 4rem;
+  border-radius: 1rem;
+}
